@@ -1,0 +1,26 @@
+@import url(normalize.css);
+#header {
+  font-size: 14pt;
+  font-weight: bold; }
+
+body {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 12pt;
+  font-weight: normal;
+  color: #00519e; }
+
+#container {
+  width: 1169px;
+  margin: 0 auto; }
+
+#header {
+  height: 160px;
+  background-color: #ffdd0c; }
+
+#content {
+  background-color: #00519e; }
+
+#footer {
+  background-color: #ffdd0c; }
+
+/*# sourceMappingURL=style.css.map */

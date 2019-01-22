@@ -1,0 +1,32 @@
+@import "normalize.css";
+@import "variables";
+@import "definitions";
+
+
+body {
+  font-family:  $font-stack;
+  font-size:    $font-size;
+  font-weight:  $font-weight;
+  color:        $primary-color;
+
+}
+
+#container {
+  width: $page-width;
+  margin: 0 auto;
+}
+
+#header {
+  @extend %title;
+  height: $header-height;
+  background-color: $alternate-color;
+}
+
+#content {
+  background-color: $primary-color;
+
+}
+
+#footer {
+  background-color: $alternate-color;
+}

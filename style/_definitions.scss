@@ -1,0 +1,10 @@
+@import "variables";
+
+%title {
+  font-size:        $font-size-title;
+  font-weight:      $font-weight-title;
+}
+
+%border {
+  border:           $border-size $border-style $border-color;
+}
