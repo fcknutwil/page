@@ -1,6 +1,7 @@
 // Color
 $primary-color:     #00519e;
 $alternate-color:   #ffdd0c;
+$third-color:       white;
 
 // Font
 $font-stack:        Verdana, Geneva, sans-serif;
@@ -15,6 +16,9 @@ $border-color:      $alternate-color;
 $border-style:      solid;
 
 // Size
-
 $page-width:        1169px;
 $header-height:     160px;
+$content-width:     885px;
+
+//
+$margin-center: 0 auto;

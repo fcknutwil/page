@@ -11,9 +11,14 @@ body {
 
 }
 
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
 #container {
   width: $page-width;
-  margin: 0 auto;
+  margin: $margin-center;
 }
 
 #header {
@@ -22,9 +27,43 @@ body {
   background-color: $alternate-color;
 }
 
-#content {
+#content_container {
   background-color: $primary-color;
 
+  #bilderwechsel {
+    @extend %content;
+  }
+
+  #carousel {
+    width: $content-width;
+    color: $alternate-color;
+    margin: $margin-center;
+
+    .tabs {
+      @extend %title;
+      display: flex;
+
+      .tab {
+        flex: 1;
+        width: $content-width / 4;
+        color: $third-color;
+        height: 55px;
+      }
+
+      .active {
+        background-color: $alternate-color;
+        color: $primary-color;
+      }
+
+    }
+    .content {
+      background-color: $alternate-color;
+    }
+  }
+
+  #content {
+    @extend %content;
+  }
 }
 
 #footer {

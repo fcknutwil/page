@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>FC Knutwl</title>
     <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/carousel.js"></script>
 </head>
 <body>
 
@@ -11,8 +13,20 @@
     <div id="header">
         header
     </div>
-    <div id="content">
-        content
+    <div id="content_container">
+        <div id="bilderwechsel">
+            bilderwechsel
+        </div>
+
+        <div id="carousel">
+            <div class="tabs">
+                <div class="tab active"><a href="javascript:changeTab(1)">News</a></div>
+                <div class="tab"><a href="javascript:changeTab(2)">Agenda</a></div>
+                <div class="tab"><a href="javascript:changeTab(3)">Heimspiele</a></div>
+                <div class="tab"><a href="javascript:changeTab(4)">Seebli</a></div>
+            </div>
+            <div class="content">Content</div>
+        </div>
     </div>
     <div id="footer">
         footer
