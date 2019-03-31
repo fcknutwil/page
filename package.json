@@ -1,0 +1,26 @@
+{
+  "name": "@fcknutwil/page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run scss-compile",
+    "start": "npm run scss-watch",
+    "scss-compile": "node-sass style/style.scss style/style.css",
+    "scss-watch": "node-sass --watch style/style.scss style/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fcknutwil/page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fcknutwil/page/issues"
+  },
+  "homepage": "https://github.com/fcknutwil/page#readme",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
