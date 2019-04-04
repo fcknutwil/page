@@ -1,0 +1,147 @@
+@import "variables";
+@import "definitions";
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+body {
+  font-family:  $font-stack;
+  font-size:    $font-size;
+  font-weight:  $font-weight;
+  color:        $primary-color;
+
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+%content_center {
+  width: $content-width;
+  margin: $margin-center;
+}
+
+
+#container {
+  width: 100%;
+}
+
+#header {
+  @extend %title;
+  min-height: $header-height;
+  background-color: $alternate-color;
+
+  .content {
+    @extend %content;
+    background-color: $alternate-color;
+  }
+}
+
+.title {
+  @extend %title;
+}
+.text {
+  font-size: $font-size;
+  font-weight: $font-weight;
+}
+#content_container {
+  background-color: $primary-color;
+  padding-top: 30px;
+
+  .page_title {
+    width: $content-width - ($border-size * 2);
+    margin: $margin-center;
+    div {
+      @extend %title;
+      background-color: $alternate-color;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      margin-bottom: 20px;
+      box-shadow: 4px 4px 2px black;
+    }
+  }
+
+
+  #bilderwechsel {
+    @extend %content;
+    margin-bottom: 30px;
+    padding: 0px;
+    min-height: 304px;
+    max-height: 304px;
+    box-shadow: 4px 4px 2px black;
+  }
+
+  #carousel {
+    .tabs {
+      @extend %content_center;
+      color: $alternate-color;
+      @extend %title;
+      display: flex;
+      max-height: 304px;
+
+      .tab {
+        padding-top: 20px;
+        padding-left: 20px;
+        color: $third-color;
+        height: 55px;
+
+        a {
+          display:block;
+          height: 100%;
+        }
+      }
+
+      .active {
+        background-color: $alternate-color;
+        color: $primary-color;
+      }
+    }
+    .content {
+      color: $primary-color;
+      background-color: $alternate-color;
+      width: $content-width;
+      font-size: 18pt;
+      vertical-align: middle;
+      height: 100%;
+      min-height: 200px;
+      max-height: 304px;
+      p {
+        font-size: 12pt;
+      }
+      box-shadow: 4px 4px 2px black;
+    }
+  }
+
+  .content {
+    @extend %content;
+
+    .mannschaft {
+      padding: 10px;
+      @extend %title;
+
+      img {
+        width: 225px;
+      }
+    }
+  }
+}
+
+#footer {
+  background-color: $primary-color;
+  .content {
+    @extend %content_center;
+    width: $content-width;
+    color: $third-color;
+    @extend %title;
+    padding-top: 30px;
+  }
+  .sponsor {
+    background-color: $alternate-color;
+    color: $primary-color;
+    text-align: center;
+    box-shadow: 4px 4px 2px black;
+  }
+}
+
+.hidden {
+  display:none;
+}

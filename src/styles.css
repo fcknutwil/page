@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
+#header, .title, #content_container .page_title div, #content_container #carousel .tabs, #content_container .content .mannschaft, #footer .content {
+  font-size: 14pt;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+#header .content, #content_container #bilderwechsel, #content_container .content {
+  border: 10pt solid #ffdd0c; }
+
+#header .content, #content_container #bilderwechsel, #content_container .content {
+  width: 973.33333px;
+  background-color: white;
+  margin: 0 auto; }
+
+body {
+  font-family: "Roboto Slab", serif;
+  font-size: 12pt;
+  font-weight: normal;
+  color: #00519e; }
+
+a {
+  color: inherit;
+  /* blue colors for links too */
+  text-decoration: inherit;
+  /* no underline */ }
+
+#content_container #carousel .tabs, #footer .content {
+  width: 1000px;
+  margin: 0 auto; }
+
+#container {
+  width: 100%; }
+
+#header {
+  min-height: 160px;
+  background-color: #ffdd0c; }
+  #header .content {
+    background-color: #ffdd0c; }
+
+.text {
+  font-size: 12pt;
+  font-weight: normal; }
+
+#content_container {
+  background-color: #00519e;
+  padding-top: 30px; }
+  #content_container .page_title {
+    width: 973.33333px;
+    margin: 0 auto; }
+    #content_container .page_title div {
+      background-color: #ffdd0c;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      margin-bottom: 20px;
+      box-shadow: 4px 4px 2px black; }
+  #content_container #bilderwechsel {
+    margin-bottom: 30px;
+    padding: 0px;
+    min-height: 304px;
+    max-height: 304px;
+    box-shadow: 4px 4px 2px black; }
+  #content_container #carousel .tabs {
+    color: #ffdd0c;
+    display: flex;
+    max-height: 304px; }
+    #content_container #carousel .tabs .tab {
+      padding-top: 20px;
+      padding-left: 20px;
+      color: white;
+      height: 55px; }
+      #content_container #carousel .tabs .tab a {
+        display: block;
+        height: 100%; }
+    #content_container #carousel .tabs .active {
+      background-color: #ffdd0c;
+      color: #00519e; }
+  #content_container #carousel .content {
+    color: #00519e;
+    background-color: #ffdd0c;
+    width: 1000px;
+    font-size: 18pt;
+    vertical-align: middle;
+    height: 100%;
+    min-height: 200px;
+    max-height: 304px;
+    box-shadow: 4px 4px 2px black; }
+    #content_container #carousel .content p {
+      font-size: 12pt; }
+  #content_container .content .mannschaft {
+    padding: 10px; }
+    #content_container .content .mannschaft img {
+      width: 225px; }
+
+#footer {
+  background-color: #00519e; }
+  #footer .content {
+    width: 1000px;
+    color: white;
+    padding-top: 30px; }
+  #footer .sponsor {
+    background-color: #ffdd0c;
+    color: #00519e;
+    text-align: center;
+    box-shadow: 4px 4px 2px black; }
+
+.hidden {
+  display: none; }
+
+/*# sourceMappingURL=styles.css.map */

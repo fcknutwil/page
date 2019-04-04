@@ -1,0 +1,167 @@
+<div id="container">
+  <div id="header">
+    <div class="content row bottom-lg">
+      <div class="col-xs-12 col-lg-3">
+        <a href="index.html">
+          <img src="images/logo.png"/>
+        </a>
+      </div>
+      <div class="col-xs-12 col-lg-2">
+        Verein
+      </div>
+      <div class="col-xs-12 col-lg-3">
+        <a href="mannschaften.html">
+          Mannschaften
+        </a>
+      </div>
+      <div class="col-xs-12 col-lg-2">
+        Junioren
+      </div>
+      <div class="col-xs-12 col-lg-2">
+        Neuer Platz
+      </div>
+    </div>
+  </div>
+  <div id="content_container">
+    <router-outlet></router-outlet>
+    <div id="bilderwechsel"><img src="images/bilderwechsel.png"/></div>
+
+    <div id="carousel">
+      <div class="row tabs">
+        <div class="col-xs-12 col-md-6 col-lg-3 tab active"><a href="javascript:changeTab(1)">News</a></div>
+        <div class="col-xs-12 col-md-6 col-lg-3 tab"><a href="javascript:changeTab(2)">Agenda</a></div>
+        <div class="col-xs-12 col-md-6 col-lg-3 tab"><a href="javascript:changeTab(3)">Heimspiele</a></div>
+        <div class="col-xs-12 col-md-6 col-lg-3 tab"><a href="javascript:changeTab(4)">Seebli</a></div>
+      </div>
+      <div class="content row middle-xs middle-lg">
+
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <div class="content row">
+      <div class="col-xs-12 col-md-6 col-lg-1">
+        <p>Kontakt</p>
+        <p>Impressum</p>
+        <p>Links</p>
+        <p><a href="https://www.facebook.com/fcknutwil" target="_blank"><img src="images/fb.png" /></a></p>
+        <p><a href="https://www.youtube.com/channel/UCCgA47p6Td49lgSKVp4GzFA" target="_blank"><img src="images/youtube.png" /></a></p>
+      </div>
+      <div class="col-xs-12 col-md-6 col-lg-offset-1 col-lg-3">
+        <div class="sponsor">
+          <p>Hauptsponsor</p>
+          <img src="images/ottos.png"/>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6 col-lg-3">
+        <div class="sponsor">
+          <p>Ausrüster</p>
+          <img src="images/ottos.png"/>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6 col-lg-4">
+        <div class="sponsor">
+          <p>Weitere Sponsoren</p>
+          <img src="images/ottos.png"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="platzhalter" class="hidden">
+  <div class="news">
+    <div class="col-lg-offset-1 col-lg-10">
+      <div class="row">
+        &nbsp;
+      </div>
+      <div class="row title">
+        B-Junioren gewinnen Fairnesspreis
+      </div>
+      <div class="row">
+        &nbsp;
+      </div>
+      <div class="row text" style="font-weight: bold">
+        (27.10.2015) Das Erfolg auf dem Platz und Fairplay sich nicht auschliessen, beweisen unsere
+        B-Junioren...
+      </div>
+      <div class="row">
+        &nbsp;
+      </div>
+      <div class="row text">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+        ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+        dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+        magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+      </div>
+    </div>
+  </div>
+  <div class="carousel_content_1">
+    <a href="javascript:newsToContent()">
+      <div class="col-lg-offset-2 col-lg-8">
+        <div class="row title">
+          B-Junioren gewinnen Fairnesspreis
+        </div>
+        <div class="row">
+          &nbsp;
+        </div>
+        <div class="row text">
+          Das Erfolg auf dem Platz und Fairplay sich nicht auschliessen, beweisen unsere B-Junioren...
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="carousel_content_2">
+    <div>Agenda</div>
+  </div>
+  <div class="carousel_content_3">
+    <div class="col-xs-4 col-lg-2">
+      <div>SA 10.10</div>
+    </div>
+    <div class="col-xs-8 col-lg-4">
+      <div>
+        <p>
+          13:30 Uhr<br/>
+          Eb-Junioren : FC Rothenburg b
+        </p>
+        <p>
+          14:30 Uhr<br/>
+          B-Junioren : FC Triengen
+        </p>
+        <p>
+          17:30 Uhr<br/>
+          1. Mannschaft : FC Luzern
+        </p>
+      </div>
+    </div>
+    <div class="col-xs-4 col-lg-2">
+      <div>SO 11.10</div>
+    </div>
+    <div class="col-xs-8 col-lg-4">
+      <div>
+        <p>
+          13:30 Uhr<br/>
+          Eb-Junioren : FC Rothenburg b
+        </p>
+        <p>
+          14:30 Uhr<br/>
+          B-Junioren : FC Triengen
+        </p>
+        <p>
+          17:30 Uhr<br/>
+          1. Mannschaft : FC Luzern
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="carousel_content_4">
+    <div class="col-lg-offset-4 col-lg-4">
+      <div class="row title">
+        Platz gesperrt
+      </div>
+    </div>
+  </div>
+</div>
