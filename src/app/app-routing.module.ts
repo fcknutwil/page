@@ -5,6 +5,10 @@ import { HomeModule } from './home/home.module';
 
 const routes: Routes = [
   {
+    path: 'mannschaften',
+    loadChildren: './mannschaften/mannschaften.module#MannschaftenModule'
+  },
+  {
     path: '',
     redirectTo: '/home',
     pathMatch: 'full'
@@ -16,7 +20,8 @@ const routes: Routes = [
   }];
 
 @NgModule({
-  imports: [HomeModule, MannschaftenModule,
+  imports: [
+    HomeModule,
     RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
