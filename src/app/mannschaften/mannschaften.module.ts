@@ -5,7 +5,7 @@ import {RouterModule, Routes} from "@angular/router";
 
 const appRoutes: Routes = [
   { path: 'mannschaften', component: ListComponent},
-  { path: 'mannschaft/:id',      component: MannschaftComponent }
+  { path: 'mannschaften/:id',      component: MannschaftComponent }
 ];
 
 @NgModule({

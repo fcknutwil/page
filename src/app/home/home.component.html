@@ -1,13 +1,13 @@
-<div id="bilderwechsel"><img src="images/bilderwechsel.png" /></div>
+<div id="bilderwechsel"><img src="assets/images/bilderwechsel.png" /></div>
 
 <div id="carousel">
   <div class="row tabs">
-    <div class="col-xs-12 col-md-6 col-lg-3 tab active"><a href="javascript:changeTab(1)">News</a></div>
-    <div class="col-xs-12 col-md-6 col-lg-3 tab"><a href="javascript:changeTab(2)">Agenda</a></div>
-    <div class="col-xs-12 col-md-6 col-lg-3 tab"><a href="javascript:changeTab(3)">Heimspiele</a></div>
-    <div class="col-xs-12 col-md-6 col-lg-3 tab"><a href="javascript:changeTab(4)">Seebli</a></div>
+    <div class="col-xs-12 col-md-6 col-lg-3 tab"><a [routerLink]="[{ outlets: { content: ['news'] } }]" routerLinkactive="active">News</a></div>
+    <div class="col-xs-12 col-md-6 col-lg-3 tab"><a [routerLink]="[{ outlets: { content: ['agenda'] } }]" routerLinkactive="active">Agenda</a></div>
+    <div class="col-xs-12 col-md-6 col-lg-3 tab"><a [routerLink]="[{ outlets: { content: ['heimspiele'] } }]" routerLinkactive="active">Heimspiele</a></div>
+    <div class="col-xs-12 col-md-6 col-lg-3 tab"><a [routerLink]="[{ outlets: { content: ['seebli'] } }]" routerLinkactive="active">Seebli</a></div>
   </div>
   <div class="content row middle-xs middle-lg">
-
+      <router-outlet name="content"></router-outlet>
   </div>
 </div>
