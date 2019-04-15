@@ -1,0 +1,22 @@
+<div id="kpfn-iframe-container"></div>
+<script type="text/javascript">
+  window.kpfnAsyncInit = function () {
+    KPFN.init({
+      'url': '//fc-knutwil.kunstrasenplatz-finanzierung.de'
+    });
+  };
+  (function () {
+    $("#left").remove();
+    $("#right").remove();
+    $("#content").width("1024px");
+    $("#content").css("margin-left", "0px");
+    if (document.getElementById('kpfn-js')) {
+      return;
+    }
+    var firstScriptElement = document.getElementsByTagName('script')[0];
+    var kpfnJS = document.createElement('script');
+    kpfnJS.id = 'kpfn-js';
+    kpfnJS.src = '//fc-knutwil.kunstrasenplatz-finanzierung.de/js/iframe-client.js';
+    firstScriptElement.parentNode.insertBefore(kpfnJS, firstScriptElement);
+  }());
+</script>
