@@ -11,7 +11,7 @@ export class HeimspieleService {
   constructor(private http: HttpClient) { }
 
   public load(): Observable<Spieltag[]> {
-    return this.http.get<Spieltag[]>('/api/heimspiele');
+    return this.http.get<Spieltag[]>('heimspiele');
   }
 
 }
