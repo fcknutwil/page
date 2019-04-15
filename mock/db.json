@@ -1,4 +1,32 @@
 {
+    "mannschaften": [
+        {
+            "id": 1,
+            "name": "FC Knutwil 1",
+            "bild": "http://redesign.fcknutwil.ch/assets/images/mannschaft.jpg"
+        },
+        {
+            "id": 2,
+            "name": "FC Knutwil 2",
+            "bild": "http://redesign.fcknutwil.ch/assets/images/mannschaft.jpg"
+        },
+        {
+            "id": 3,
+            "name": "FC Knutwil 3",
+            "bild": "http://redesign.fcknutwil.ch/assets/images/mannschaft.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Senioren",
+            "bild": "http://redesign.fcknutwil.ch/assets/images/mannschaft.jpg"
+        },
+        {
+            "id": 5,
+            "name": "A-Junioren",
+            "bild": "http://redesign.fcknutwil.ch/assets/images/mannschaft.jpg"
+        }
+
+    ],
     "heimspiele": [
         {
             "datum": "2019-04-20",
