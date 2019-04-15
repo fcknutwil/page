@@ -64,7 +64,8 @@
           "options": {
             "browserTarget": "fcknutwil:build",
             "open": true,
-            "liveReload": true
+            "liveReload": true,
+            "proxyConfig": "mock/proxy.conf.json"
           },
           "configurations": {
             "production": {

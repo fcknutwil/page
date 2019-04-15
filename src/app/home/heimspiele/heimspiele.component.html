@@ -1,39 +1,26 @@
 <div class="row">
   <div class="col-xs-4 col-lg-2">
-    <div>SA 10.10</div>
+    <div>{{datum1 | date: 'EEEEEE dd.LL'}}</div>
   </div>
   <div class="col-xs-8 col-lg-4">
     <div>
-      <p>
-        13:30 Uhr<br />
-        Eb-Junioren : FC Rothenburg b
-      </p>
-      <p>
-        14:30 Uhr<br />
-        B-Junioren : FC Triengen
-      </p>
-      <p>
-        17:30 Uhr<br />
-        1. Mannschaft : FC Luzern
+      <p *ngFor="let spiel of spiele1">
+        {{spiel.zeit}}<br />
+        {{spiel.begegnung}}
+        <span *ngIf="spiel.verschoben" style="color: red">
+          Verschoben
+        </span>
       </p>
     </div>
   </div>
   <div class="col-xs-4 col-lg-2">
-    <div>SO 11.10</div>
+    <div>{{datum2 | date: 'EEEEEE dd.LL'}}</div>
   </div>
   <div class="col-xs-8 col-lg-4">
     <div>
-      <p>
-        13:30 Uhr<br />
-        Eb-Junioren : FC Rothenburg b
-      </p>
-      <p>
-        14:30 Uhr<br />
-        B-Junioren : FC Triengen
-      </p>
-      <p>
-        17:30 Uhr<br />
-        1. Mannschaft : FC Luzern
+      <p *ngFor="let spiel of spiele2">
+        {{spiel.zeit}}<br />
+        {{spiel.begegnung}}
       </p>
     </div>
   </div>
