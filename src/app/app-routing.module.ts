@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { MannschaftenModule } from "./mannschaften/mannschaften.module";
 import { HomeModule } from './home/home.module';
 
 const routes: Routes = [
+  {
+    path: 'neuer-platz',
+    loadChildren: './neuer-platz/neuer-platz.module#NeuerPlatzModule'
+  },
   {
     path: 'mannschaften',
     loadChildren: './mannschaften/mannschaften.module#MannschaftenModule'

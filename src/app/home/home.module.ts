@@ -1,5 +1,6 @@
 import { NewsComponent } from "./news/news.component";
 import { NgModule } from "@angular/core";
+import { HttpClientModule } from '@angular/common/http';
 import { AgendaComponent } from "./agenda/agenda.component";
 import { HeimspieleComponent } from "./heimspiele/heimspiele.component";
 import { SeebliComponent } from "./seebli/seebli.component";
@@ -12,6 +13,7 @@ import { HomeComponent } from './home.component';
   declarations: [HomeComponent, AgendaComponent, NewsComponent, HeimspieleComponent, SeebliComponent],
   imports: [
     CommonModule,
+    HttpClientModule,
     HomeRoutingModule
   ]
 })
