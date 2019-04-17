@@ -2,13 +2,37 @@
     "seebli": {
         "offen": true
     },
+    "vorstand": [
+        {
+            "funktion": "Präsident",
+            "person": {
+                "name": "Amstutz Cornel",
+                "strasse": "Eriswilerstrasse 4",
+                "ort": "6213 Knutwil",
+                "telefon": "079 704 76 02",
+                "email": "chregu.f@bluewin.ch"
+            },
+            "bild": "assets/images/mannschaft.jpg"
+        },
+        {
+            "funktion": "Vize-Präsident",
+            "person": {
+                "name": "Frank Thomas",
+                "strasse": "Eriswilerstrasse 4",
+                "ort": "6213 Knutwil",
+                "telefon": "079 704 76 02",
+                "email": "chregu.f@bluewin.ch"
+            },
+            "bild": "assets/images/mannschaft.jpg"
+        }
+    ],
     "mannschaften": [
         {
             "id": 1,
             "name": "FC Knutwil 1",
             "staff": [
                 {
-                    "typ": "Trainer",
+                    "funktion": "Trainer",
                     "person": {
                         "name": "Dominguez Servan",
                         "strasse": "Titlisweg 13",
@@ -18,7 +42,7 @@
                     }
                 },
                 {
-                    "typ": "Coach",
+                    "funktion": "Coach",
                     "person": {
                         "name": "Felder Christoph",
                         "strasse": "Eriswilerstrasse 4",
@@ -28,7 +52,7 @@
                     }
                 },
                 {
-                    "typ": "Coach",
+                    "funktion": "Coach",
                     "person": {
                         "name": "Lang Benny",
                         "strasse": "Weidmatt 1a",
@@ -38,7 +62,7 @@
                     }
                 },
                 {
-                    "typ": "Masseur",
+                    "funktion": "Masseur",
                     "person": {
                         "name": "Ferrari Bruno",
                         "strasse": "Grossmattweg 26",
@@ -58,7 +82,7 @@
             "name": "FC Knutwil 2",
             "staff": [
                 {
-                    "typ": "Trainer",
+                    "funktion": "Trainer",
                     "person": {
                         "name": "Dominguez Servan",
                         "strasse": "Titlisweg 13",
@@ -68,7 +92,7 @@
                     }
                 },
                 {
-                    "typ": "Coach",
+                    "funktion": "Coach",
                     "person": {
                         "name": "Felder Christoph",
                         "strasse": "Eriswilerstrasse 4",
@@ -87,7 +111,7 @@
             "name": "FC Knutwil 3",
             "staff": [
                 {
-                    "typ": "Trainer",
+                    "funktion": "Trainer",
                     "person": {
                         "name": "Dominguez Servan",
                         "strasse": "Titlisweg 13",

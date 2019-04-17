@@ -1,6 +1,7 @@
 import { Person } from './person';
 
 export class Staff {
-    name: string;
+    funktion: string;
     typ: Person;
+    bild?: string;
 }

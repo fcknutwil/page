@@ -4,6 +4,10 @@ import { HomeModule } from './home/home.module';
 
 const routes: Routes = [
   {
+    path: 'vorstand',
+    loadChildren: './verein/vorstand/vorstand.module#VorstandModule'
+  },
+  {
     path: 'neuer-platz',
     loadChildren: './neuer-platz/neuer-platz.module#NeuerPlatzModule'
   },

@@ -1,0 +1,10 @@
+<app-page title="Vorstand">
+  <div class="col-lg-3" *ngFor="let staff of vorstand">
+    <span style="font-weight: bold">{{staff.funktion}}</span><br />
+    <span>{{staff.person.name}}</span><br />
+    <span>{{staff.person.strasse}}</span><br />
+    <span>{{staff.person.ort}}</span><br />
+    <span>Privat: {{staff.person.telefon}}</span><br />
+    <span>E-Mail: {{staff.person.email}}</span><br /><br />
+  </div>
+</app-page>
