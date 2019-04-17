@@ -1,31 +1,80 @@
 <div id="header">
-  <div class="content row bottom-lg">
-    <div class="col-xs-12 col-lg-2">
-      <a routerLink="/home">
-        <img src="assets/images/logo.png" />
-      </a>
-    </div>
-    <div class="col-xs-12 col-lg-1">
-      Verein
-    </div>
-    <div class="col-xs-12 col-lg-2">
-      <a routerLink="/mannschaften">
-        Mannschaften
-      </a>
-    </div>
-    <div class="col-xs-12 col-lg-2">
-      Junioren
-    </div>
-    <div class="col-xs-12 col-lg-2">
-      <a routerLink="/neuer-platz">
-        Neuer Platz
-      </a>
-    </div>
-    <div class="col-xs-12 col-lg-1">
-      Media
-    </div>
-    <div class="col-xs-12 col-lg-2">
-      Donatoren
-    </div>
+  <div class="content">
+    <nav role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a routerLink="/home">
+          <img src="assets/images/logo.png" />
+        </a>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbar">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navbar" class="navbar-menu">
+        <div class="navbar-start">
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Verein
+            </a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item" routerLink="/vorstand">
+                Vorstand
+              </a>
+              <a class="navbar-item">
+                Klubhaus
+              </a>
+              <a class="navbar-item">
+                News/Archiv
+              </a>
+              <a class="navbar-item">
+                Leitbild
+              </a>
+              <a class="navbar-item">
+                Geschichte
+              </a>
+            </div>
+          </div>
+          <a class="navbar-item" routerLink="/mannschaften">
+            Mannschaften
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Junioren
+            </a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                Juniorenlager 2018
+              </a>
+              <a class="navbar-item">
+                Anmeldeformular Kifu
+              </a>
+              <a class="navbar-item">
+                Ehrenkodex
+              </a>
+            </div>
+          </div>
+          <a class="navbar-item" routerLink="/neuer-platz">
+            Neuer Platz
+          </a>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Media
+            </a>
+            <div class="navbar-dropdown">
+              <a class="navbar-item">
+                Fotos
+              </a>
+              <a class="navbar-item">
+                Videos
+              </a>
+            </div>
+          </div>
+          <a class="navbar-item" routerLink="/donaten">
+            Donatoren
+          </a>
+        </div>
+      </div>
+    </nav>
   </div>
 </div>

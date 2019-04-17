@@ -3,6 +3,14 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 @import "../node_modules/flexboxgrid/dist/flexboxgrid.min.css";
 
+// Customize Navbar (https://bulma.io/documentation/components/navbar/#variables)
+$navbar-background-color: $alternate-color;
+$navbar-dropdown-background-color: $alternate-color;
+$navbar-item-hover-background-color: $alternate-color;
+$navbar-dropdown-arrow: $primary-color;
+$navbar-item-color: $primary-color;
+@import "../node_modules/bulma/bulma.sass";
+
 body {
   font-family:  $font-stack;
   font-size:    $font-size;
