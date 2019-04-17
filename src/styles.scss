@@ -1,6 +1,7 @@
 @import "variables";
 @import "definitions";
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import "../node_modules/flexboxgrid/dist/flexboxgrid.min.css";
 
 body {
   font-family:  $font-stack;

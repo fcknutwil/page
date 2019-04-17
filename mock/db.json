@@ -6,17 +6,99 @@
         {
             "id": 1,
             "name": "FC Knutwil 1",
-            "bild": "http://redesign.fcknutwil.ch/assets/images/mannschaft.jpg"
+            "staff": [
+                {
+                    "typ": "Trainer",
+                    "person": {
+                        "name": "Dominguez Servan",
+                        "strasse": "Titlisweg 13",
+                        "ort": "6020 Emmenbrücke",
+                        "telefon": "079 820 46 72",
+                        "email": "sd@endag.ch"
+                    }
+                },
+                {
+                    "typ": "Coach",
+                    "person": {
+                        "name": "Felder Christoph",
+                        "strasse": "Eriswilerstrasse 4",
+                        "ort": "6213 Knutwil",
+                        "telefon": "079 704 76 02",
+                        "email": "chregu.f@bluewin.ch"
+                    }
+                },
+                {
+                    "typ": "Coach",
+                    "person": {
+                        "name": "Lang Benny",
+                        "strasse": "Weidmatt 1a",
+                        "ort": "6212 Kaltbach",
+                        "telefon": "079 314 89 71",
+                        "email": "benilang86@gmx.ch"
+                    }
+                },
+                {
+                    "typ": "Masseur",
+                    "person": {
+                        "name": "Ferrari Bruno",
+                        "strasse": "Grossmattweg 26",
+                        "ort": "6460 Altdorf UR",
+                        "telefon": "079 233 05 17",
+                        "email": "famferrari@bluewin.ch"
+                    }
+                }
+            ],
+            "training": "Dienstag und Donnerstag um 19.00 Uhr",
+            "ifv": "http://www.ifv.ch/Innerschweizerischer-Fussballverband/Vereine-IFV/Verein-IFV.aspx/v-358/t-31021/ls-16772/sg-49549/a-pt/",
+            "spielberichte": true,
+            "bild": "assets/images/mannschaft.jpg"
         },
         {
             "id": 2,
             "name": "FC Knutwil 2",
-            "bild": "http://redesign.fcknutwil.ch/assets/images/mannschaft.jpg"
+            "staff": [
+                {
+                    "typ": "Trainer",
+                    "person": {
+                        "name": "Dominguez Servan",
+                        "strasse": "Titlisweg 13",
+                        "ort": "6020 Emmenbrücke",
+                        "telefon": "079 820 46 72",
+                        "email": "sd@endag.ch"
+                    }
+                },
+                {
+                    "typ": "Coach",
+                    "person": {
+                        "name": "Felder Christoph",
+                        "strasse": "Eriswilerstrasse 4",
+                        "ort": "6213 Knutwil",
+                        "telefon": "079 704 76 02",
+                        "email": "chregu.f@bluewin.ch"
+                    }
+                }
+            ],
+            "training": "Mittwoch 20.00 Uhr",
+            "spielberichte": true,
+            "bild": "assets/images/mannschaft.jpg"
         },
         {
             "id": 3,
             "name": "FC Knutwil 3",
-            "bild": "http://redesign.fcknutwil.ch/assets/images/mannschaft.jpg"
+            "staff": [
+                {
+                    "typ": "Trainer",
+                    "person": {
+                        "name": "Dominguez Servan",
+                        "strasse": "Titlisweg 13",
+                        "ort": "6020 Emmenbrücke",
+                        "telefon": "079 820 46 72",
+                        "email": "sd@endag.ch"
+                    }
+                }
+            ],
+            "training": "Mittwoch 20.00 Uhr",
+            "bild": "assets/images/mannschaft.jpg"
         },
         {
             "id": 4,
@@ -28,7 +110,6 @@
             "name": "A-Junioren",
             "bild": "http://redesign.fcknutwil.ch/assets/images/mannschaft.jpg"
         }
-
     ],
     "heimspiele": [
         {
@@ -39,21 +120,18 @@
                     "begegnung": "Eb-Junioren : FC Rothenburg b",
                     "ort": "Seebli",
                     "verschoben": false
-
                 },
                 {
                     "zeit": "14:30",
                     "begegnung": "B-Junioren : FC Triengen",
                     "ort": "Seebli",
                     "verschoben": true
-
                 },
                 {
                     "zeit": "17:30",
                     "begegnung": "1. Mannschaft : FC Luzern",
                     "ort": "Seebli",
                     "verschoben": false
-
                 }
             ]
         },
@@ -65,7 +143,6 @@
                     "begegnung": "A-Junioren : FC Rothenburg b",
                     "ort": "Seebli",
                     "verschoben": false
-
                 }
             ]
         }

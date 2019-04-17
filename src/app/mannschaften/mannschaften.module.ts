@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
-import { ListComponent } from './list/list.component';
-import { MannschaftComponent } from './mannschaft/mannschaft.component';
-import { MannschaftenRoutingModule } from './mannschaften-routing.module';
 import { CommonModule } from '@angular/common';
+import { MannschaftenRoutingModule } from './mannschaften-routing.module';
+import { MannschaftComponent } from './mannschaft/mannschaft.component';
+import { MannschaftenComponent } from './mannschaften/mannschaften.component';
+import { SpielberichteComponent } from './spielberichte/spielberichte.component';
 
 @NgModule({
-  declarations: [ListComponent, MannschaftComponent],
+  declarations: [MannschaftenComponent, MannschaftComponent, SpielberichteComponent],
   imports: [
     CommonModule,
     MannschaftenRoutingModule

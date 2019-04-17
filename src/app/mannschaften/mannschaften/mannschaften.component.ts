@@ -3,18 +3,17 @@ import { MannschaftenService } from '../mannschaften.service';
 import { Mannschaft } from 'src/app/types/mannschaft';
 
 @Component({
-  selector: 'app-list',
-  templateUrl: './list.component.html',
-  styleUrls: ['./list.component.scss']
+  selector: 'app-mannschaften',
+  templateUrl: './mannschaften.component.html',
+  styleUrls: ['./mannschaften.component.scss']
 })
-export class ListComponent implements OnInit {
+export class MannschaftenComponent implements OnInit {
 
   mannschaften: Mannschaft[];
-
+  
   constructor(private service: MannschaftenService) { }
 
   ngOnInit() {
     this.service.liste().subscribe(mannschaften => this.mannschaften = mannschaften);
   }
-
 }
