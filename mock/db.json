@@ -1,4 +1,7 @@
 {
+    "seebli": {
+        "offen": true
+    },
     "mannschaften": [
         {
             "id": 1,

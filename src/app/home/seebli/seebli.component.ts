@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SeebliService } from './seebli.service';
 
 @Component({
   selector: 'app-seebli',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SeebliComponent implements OnInit {
 
-  constructor() { }
+  offen: boolean;
 
-  ngOnInit() {
+  constructor(private service: SeebliService) { }
+
+    ngOnInit() {
+      this.service.load().subscribe(data => {
+        this.offen = data.offen;
+      });
   }
 
 }

@@ -1,7 +1,6 @@
-<div class="row">
-  <div class="col-lg-offset-4 col-lg-4">
-    <div class="row title">
-      Platz gesperrt
-    </div>
-  </div>
+<div class="row" width="100%">
+      <div class="col-lg-offset-8 col-lg-2">
+            <img *ngIf="offen" src="assets/images/freigegeben.png">
+            <img *ngIf="!offen" src="assets/images/gesperrt.png">
+      </div>
 </div>
