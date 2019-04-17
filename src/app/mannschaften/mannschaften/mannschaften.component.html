@@ -1,5 +1,5 @@
 <app-page title="Mannschaften">
-  <div class="content row middle-lg center-lg">
+  <div class="row middle-lg center-lg">
     <div class="mannschaft col-xs-12 col-lg-4" *ngFor="let mannschaft of mannschaften">
       <img src="{{mannschaft.bild}}" /><br />
       <a [routerLink]="['/mannschaften', mannschaft.id]">{{mannschaft.name}}</a>
