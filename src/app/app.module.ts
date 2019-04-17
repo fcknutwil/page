@@ -10,6 +10,7 @@ import localeDECH from '@angular/common/locales/de-CH';
 import { environment } from 'src/environments/environment';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { BaseUrlInterceptor } from './base-url-interceptor';
+import { LoadingSpinnerModule } from './loading-spinner/loading-spinner.module';
 
 registerLocaleData(localeDECH, 'de-ch');
 
@@ -20,6 +21,7 @@ registerLocaleData(localeDECH, 'de-ch');
     FooterComponent
   ],
   imports: [
+    LoadingSpinnerModule,
     BrowserModule,
     AppRoutingModule
   ],
